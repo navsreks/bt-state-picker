@@ -1,15 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
-<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
-<link rel="import" href="../bower_components/iron-a11y-keys-behavior/iron-a11y-keys-behavior.html">
-<link rel="import" href="../bower_components/iron-form/iron-form.html">
-
-<link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
-<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
-<link rel="import" href="../bower_components/paper-item/paper-item.html">
-
-
-
 <dom-module id="bt-state-picker">
     <style>
       :host {
@@ -24,21 +14,6 @@
         @apply(--layout-vertical);
       }
 
-      html /deep/ paper-dropdown-menu{
-        box-sizing: border-box;
-        width: 170px;
-      }
-
-      html /deep/ iron-menu-behavior{
-        box-sizing: border-box;
-        width: 170px;
-      }
-
-      html /deep/ iron-collapse{
-        border: 1px solid #ccc;
-        padding: 8px;
-      }
-
       option{
         overflow: hidden;
         white-space: nowrap;
@@ -50,14 +25,6 @@
     </style>
 
   <template>
-<paper-dropdown-menu label= "state *">
-<paper-listbox class="dropdown-content">
-  <paper-item>Croissant</paper-item>
-  <paper-item>Donut</paper-item>
-  <paper-item>Financier</paper-item>
-  <paper-item>Madeleine</paper-item>
-</paper-listbox>
-</paper-dropdown-menu>
 
 <select id= "State *">
   <option> select a state </option>
